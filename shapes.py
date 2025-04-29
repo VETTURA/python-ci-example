@@ -19,7 +19,9 @@ class Shape:
         Raises:
             NotImplementedError: Метод должен быть переопределен в дочернем классе.
         """
-        raise NotImplementedError("Метод get_area должен быть переопределен в дочернем классе.")
+        raise NotImplementedError(
+            "Метод get_area должен быть переопределен в дочернем классе."
+        )
 
     def get_perimeter(self):
         """
@@ -31,7 +33,9 @@ class Shape:
         Raises:
             NotImplementedError: Метод должен быть переопределен в дочернем классе.
         """
-        raise NotImplementedError("Метод get_perimeter должен быть переопределен в дочернем классе.")
+        raise NotImplementedError(
+            "Метод get_perimeter должен быть переопределен в дочернем классе."
+        )
 
     def __str__(self):
         """
@@ -43,7 +47,9 @@ class Shape:
         Raises:
             NotImplementedError: Метод должен быть переопределен в дочернем классе.
         """
-        raise NotImplementedError("Метод __str__ должен быть переопределен в дочернем классе.")
+        raise NotImplementedError(
+            "Метод __str__ должен быть переопределен в дочернем классе."
+        )
 
 
 class Rectangle(Shape):
@@ -118,7 +124,7 @@ class Circle(Shape):
 
     def get_area(self):
         """Возвращает площадь круга."""
-        return math.pi * self.__radius ** 2
+        return math.pi * self.__radius**2
 
     def get_perimeter(self):
         """Возвращает длину окружности."""
